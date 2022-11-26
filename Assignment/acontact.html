@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <title>Register</title>
+    <link rel="icon" type="image/x-icon" href="/Users/vinoth/Downloads/3rd sem/User Interface Design/Personal Page/Logo">
+</head>
+
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(51, 51, 51, 0);
+    }
+
+    li {
+        float: right;
+    }
+
+    li a {
+        display: block;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: rgb(255, 255, 255);
+    }
+
+    img {
+        opacity: 0.85;
+        float: left;
+        margin-top: 70px;
+        margin-left: 90px;
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+</style>
+
+<body style="margin: 0%; background-color: rgb(234, 241, 247);">
+
+    <ul>
+        <li><a
+            href="file:///Users/vinoth/Downloads/3rd%20sem/User%20Interface%20Design/Practice/aboutus.html">About Us</a>
+    </li>
+        <li><a
+                href="file:///Users/vinoth/Downloads/3rd%20sem/User%20Interface%20Design/Practice/amain.html">Home</a>
+        </li>
+        
+    </ul>
+    <pre style="font-size:60px;float: right;margin-right: 345px;">Register</pre>
+    <img src="1.png" style="width:550px;height:550px;border-radius: 50%;">
+    <script>
+        function myFunction() {
+          // Get the value of the input field with id="numb"
+          let x = document.getElementById("numb").value;
+          // If x is Not a Number or less than one or greater than 10
+          let text;
+          if (isNaN(x) || x < 1 || x > 10) {
+            text = "Input not valid";
+          } else {
+            text = "Input OK";
+          }
+          document.getElementById("demo").innerHTML = text;
+        }
+        </script>
+    <div>
+        <form>
+            <pre style="text-align:left;margin-top: 170px;padding-left: 47%; font-size: 19px;">
+            <label for="fname">Name:</label>                <input style="width: 35%;" id="fname" placeholder="Your name.." required>
+            
+            <label for="num">Phone number:</label>        <input style="width: 35%;" type="text" id="num" placeholder="Enter your number.." required>
+            <p id="demo"></p>
+            <label>Gender:             </label> <input type= "radio" name="gender" value="m" required>Male
+                                 <input type= "radio" name="gender" value="f" required>Female
+                                 <input type= "radio" name="gender" value="o" required>Prefer not to say
+
+            <label>Date of birth:</label>       <input type="date" id="birthday" name="birthday">
+
+            <label>Upload your ID-card:</label> <input type="file" id="myFile" name="filename" required>
+            
+            <label for="gmail">University Mail ID:</label>  <input style="width: 35%;" type="text" id="gmail" placeholder="abc123@gmail.com" required>
+
+            <label for="state">Branch</label>               <select id="Branch">
+            <option>Select Branch</option>
+            <option value="CSE">CSE</option>
+            <option value="CYS">CYS</option>
+            <option value="Mech">Mech</option>
+            <option value="AI">AI</option>
+            <option value="Mass">Msss Comm</option>
+            <option value="Goa">ECE</option>
+            <option value="Gujarat">EEE</option>
+            <option value="Haryana">ARE</option>
+            <option value="Himachal Pradesh">Agri</option>
+            </select>
+
+            <label>Password:</label>            <input type="password" name="password" placeholder=" Enter password"  required>
+
+            <label>Confirm Password:</label>    <input type="password" name="password" placeholder=" Confirm password"   required>
+
+
+                            <input type="submit" onclick="myFunction()" value="Register">
+        </form>
+    </div>
+
+</body>
+<div class="footer">
+    <p>copyrights@2022 vinoth</p>
+</div>
+
+</html>
